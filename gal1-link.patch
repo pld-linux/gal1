@@ -1,0 +1,25 @@
+--- gal-0.24/gal/Makefile.am.orig	2002-03-27 00:00:32.000000000 +0100
++++ gal-0.24/gal/Makefile.am	2004-04-15 22:48:38.335655281 +0200
+@@ -6,7 +6,7 @@
+ lib_LTLIBRARIES = libgal.la
+ 
+ libgal_la_LDFLAGS = -version-info $(GAL_CURRENT):$(GAL_REVISION):$(GAL_AGE) \
+-		    $(ICONV_LIBS) $(GTK_LIBS)
++		    $(ICONV_LIBS) $(GTK_LIBS) $(GAL_LIB_LIBS)
+ libgal_la_SOURCES = bogus_automake_hack.c
+ 
+ libgal_la_LIBADD = util/libutil.la \
+--- gal-0.24/configure.in.orig	2004-04-15 22:45:33.000000000 +0200
++++ gal-0.24/configure.in	2004-04-15 22:48:26.097616963 +0200
+@@ -348,9 +348,11 @@
+ GAL_LIBDIR='-L${libdir}'
+ GAL_INCLUDEDIR=" -I${includedir}/gal-1.0 `$GNOME_CONFIG --cflags gnomeui gdk_pixbuf print libglade gnomecanvaspixbuf` $ICONV_CFLAGS"
+ GAL_LIBS="-lgal `$GNOME_CONFIG --libs gnomeui gdk_pixbuf print libglade gnomecanvaspixbuf` $ICONV_LIBS"
++GAL_LIB_LIBS="`$GNOME_CONFIG --libs gnomeui gdk_pixbuf print libglade gnomecanvaspixbuf`"
+ AC_SUBST(GAL_LIBDIR)
+ AC_SUBST(GAL_INCLUDEDIR)
+ AC_SUBST(GAL_LIBS)
++AC_SUBST(GAL_LIB_LIBS)
+ 
+ EXTRA_GNOME_LIBS=`gnome-config --libs gnomeui print libart libglade gdk_pixbuf gnomecanvaspixbuf`
+ EXTRA_GNOME_CFLAGS=`gnome-config --cflags gnomeui print libart libglade gdk_pixbuf gnomecanvaspixbuf`
