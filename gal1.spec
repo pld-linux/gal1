@@ -28,6 +28,7 @@ BuildRequires:	libglade-devel >= 0.13
 BuildRequires:	libglade-gnome-devel >= 0.13
 BuildRequires:	libtool
 BuildRequires:	libxml-devel >= 1.8.8
+BuildRequires:	sed >= 4.0
 Obsoletes:	libgal19
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
