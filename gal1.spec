@@ -5,7 +5,7 @@ Summary(ru):	Библиотека для составных документов в GNOME
 Summary(uk):	Б╕бл╕отека для компонентних документ╕в в GNOME
 Name:		gal1
 Version:	0.24
-Release:	3
+Release:	4
 Epoch:		1
 License:	LGPL
 Group:		X11/Libraries
@@ -67,7 +67,7 @@ Summary(pt_BR):	Arquivos de inclusЦo do gal
 Summary(ru):	Библиотеки и хедеры для gal
 Summary(uk):	Б╕бл╕отеки та хедери для gal
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	gdk-pixbuf-gnome-devel
 Requires:	gnome-print-devel >= 0.28
 Requires:	libglade-gnome-devel >= 0.13
@@ -97,7 +97,7 @@ Summary:	gal static libraries
 Summary(pl):	Biblioteki statyczne gal
 Summary(pt_BR):	Bibliotecas estАticas do gal
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{version}-%{release}
+Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
 %description static
 Gal static libraries.
