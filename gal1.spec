@@ -5,7 +5,7 @@ Summary(ru):	Библиотека для составных документов в GNOME
 Summary(uk):	Б╕бл╕отека для компонентних документ╕в в GNOME
 Name:		gal1
 Version:	0.24
-Release:	1
+Release:	2
 Epoch:		1
 License:	LGPL
 Group:		X11/Libraries
@@ -28,8 +28,8 @@ BuildRequires:	libglade-devel >= 0.13
 BuildRequires:	libglade-gnome-devel >= 0.13
 BuildRequires:	libtool
 BuildRequires:	libxml-devel >= 1.8.8
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libgal19
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This the GNOME Application Libs (GAL). This module contains some
@@ -114,11 +114,13 @@ Bibliotecas estАticas do gal.
 %patch2 -p1
 %patch3 -p1
 
+sed -i -e 's/AM_GNOME_GETTEXT/AM_GNU_GETTEXT/' configure.in
+sed -i -e 's/AM_PROG_XML_I18N_TOOLS/AC_PROG_INTLTOOL/' configure.in
+
 mv -f po/{no,nb}.po
 
 %build
-sed -e s/AM_GNOME_GETTEXT/AM_GNU_GETTEXT/ configure.in > configure.in.tmp
-mv -f configure.in.tmp configure.in
+intltoolize --copy --force
 %{__libtoolize}
 %{__gettextize}
 %{__aclocal} -I %{_aclocaldir}/gnome
