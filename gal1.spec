@@ -5,7 +5,7 @@ Summary(ru):	Библиотека для составных документов в GNOME
 Summary(uk):	Б╕бл╕отека для компонентних документ╕в в GNOME
 Name:		gal1
 Version:	0.24
-Release:	2
+Release:	3
 Epoch:		1
 License:	LGPL
 Group:		X11/Libraries
