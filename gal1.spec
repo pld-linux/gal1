@@ -1,8 +1,8 @@
 Summary:	GNOME Application Libs (GAL)
-Summary(pl.UTF-8):   Biblioteki Aplikacji GNOME (GAL)
-Summary(pt_BR.UTF-8):   G App Libs: Biblioteca para uso em aplicativos GNOME
-Summary(ru.UTF-8):   Библиотека для составных документов в GNOME
-Summary(uk.UTF-8):   Бібліотека для компонентних документів в GNOME
+Summary(pl.UTF-8):	Biblioteki Aplikacji GNOME (GAL)
+Summary(pt_BR.UTF-8):	G App Libs: Biblioteca para uso em aplicativos GNOME
+Summary(ru.UTF-8):	Библиотека для составных документов в GNOME
+Summary(uk.UTF-8):	Бібліотека для компонентних документів в GNOME
 Name:		gal1
 Version:	0.24
 Release:	4
@@ -62,10 +62,10 @@ uma série de aplicações GNOME maiores.
 
 %package devel
 Summary:	gal header files and development documentation
-Summary(pl.UTF-8):   Pliki nagłówkowe i dokumentacja gala
-Summary(pt_BR.UTF-8):   Arquivos de inclusão do gal
-Summary(ru.UTF-8):   Библиотеки и хедеры для gal
-Summary(uk.UTF-8):   Бібліотеки та хедери для gal
+Summary(pl.UTF-8):	Pliki nagłówkowe i dokumentacja gala
+Summary(pt_BR.UTF-8):	Arquivos de inclusão do gal
+Summary(ru.UTF-8):	Библиотеки и хедеры для gal
+Summary(uk.UTF-8):	Бібліотеки та хедери для gal
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	gdk-pixbuf-gnome-devel
@@ -94,8 +94,8 @@ o gal.
 
 %package static
 Summary:	gal static libraries
-Summary(pl.UTF-8):   Biblioteki statyczne gal
-Summary(pt_BR.UTF-8):   Bibliotecas estáticas do gal
+Summary(pl.UTF-8):	Biblioteki statyczne gal
+Summary(pt_BR.UTF-8):	Bibliotecas estáticas do gal
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
