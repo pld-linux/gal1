@@ -7,9 +7,9 @@ Name:		gal1
 Version:	0.24
 Release:	4
 Epoch:		1
-License:	LGPL
+License:	LGPL v2
 Group:		X11/Libraries
-Source0:	ftp://ftp.gnome.org/pub/gnome/sources/gal/%{version}/gal-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gal/%{version}/gal-%{version}.tar.bz2
 # Source0-md5:	9f9790d4e8763c4ce74e5d59f47aa509
 Patch0:		%{name}-am15.patch
 Patch1:		%{name}-locale-names.patch
