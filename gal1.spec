@@ -18,7 +18,7 @@ Patch3:		%{name}-link.patch
 BuildRequires:	automake
 BuildRequires:	autoconf
 BuildRequires:	gdk-pixbuf-gnome-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel >= 1.2.12
 BuildRequires:	gnome-print-devel >= 0.28
 BuildRequires:	gnome-vfs-devel >= 1.0
