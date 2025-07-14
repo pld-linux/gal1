@@ -110,10 +110,10 @@ Bibliotecas estáticas do gal.
 
 %prep
 %setup -q -n gal-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
+%patch -P3 -p1
 
 sed -i -e 's/AM_GNOME_GETTEXT/AM_GNU_GETTEXT/' configure.in
 sed -i -e 's/AM_PROG_XML_I18N_TOOLS/AC_PROG_INTLTOOL/' configure.in
